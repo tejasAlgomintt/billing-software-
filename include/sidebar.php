@@ -10,7 +10,7 @@
       <li class="nav-item">
         <a class="nav-link" href="enquiry.php">
           <span class="menu-title">Enquiry</span>
-          <i class="mdi mdi-chart-areaspline menu-icon"></i>
+          <i class="mdi mdi-alpha-e-circle menu-icon"></i>
         </a>
       </li>
       <li class="nav-item">

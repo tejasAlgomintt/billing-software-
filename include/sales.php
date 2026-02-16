@@ -1,7 +1,10 @@
           <div class="mainBox mx-auto">
               <div class="content-wrapper">
-                  <div class="page-header animate__animated animate__bounce">
-                      <h3 class="page-title">
+                  <div class="page-header">
+                      <nav aria-label="breadcrumb">
+                          <button class="btn bgPurpal text-white btn-sm addNew">New</button>
+                      </nav>
+                      <h3 class="page-title animate__animated animate__bounce">
                           Sales
                           <span
                               class="page-title-icon bgPurpal text-white me-2">
@@ -11,6 +14,108 @@
 
                   </div>
 
+
+                  <div class="row g-2 align-items-end">
+                      <div class="col-12 col-lg-2">
+                          <label class="form-label">Display
+                              Rows</label>
+                          <select
+                              class="form-select rounded-0 shadow-none selectHeight">
+                              <option>10</option>
+                              <option>25</option>
+                              <option>50</option>
+                              <option>100</option>
+                          </select>
+                      </div>
+                      <div class="col-12 col-lg-2">
+                          <label class="form-label">Select
+                              City</label>
+                          <select
+                              class="form-select rounded-0 shadow-none selectHeight">
+                              <option>All</option>
+                              <option>Sangli</option>
+                              <option>Karad</option>
+                          </select>
+                      </div>
+                      <div class="col-12 col-lg-4">
+                          <label class="form-label">Search
+                              Party</label>
+                          <input type="text"
+                              class="form-control rounded-0 inputHeight"
+                              placeholder="Search Party">
+                      </div>
+                  </div>
+
+                  <div class="table-responsive">
+                      <div class="table-responsive mt-4 animate__animated animate__fadeIn">
+                          <table class="table table-bordered table-hover align-middle">
+                              <thead class="bgPurpal text-white">
+                                  <tr>
+                                      <th class="tableHeadingColor">No.</th>
+                                      <th class="tableHeadingColor">Date</th>
+                                      <th class="tableHeadingColor">Customer</th>
+                                      <th class="tableHeadingColor">Contact</th>
+                                      <th class="tableHeadingColor">CIB</th>
+                                      <th class="tableHeadingColor">GSTN</th>
+                                      <th class="tableHeadingColor">Item/Series</th>
+                                      <th class="tableHeadingColor">HSN</th>
+                                      <th class="tableHeadingColor">Qty</th>
+                                      <th class="tableHeadingColor">Rate</th>
+                                      <th class="tableHeadingColor">GST %</th>
+                                      <th class="tableHeadingColor">Tax</th>
+                                      <th class="tableHeadingColor">Amount</th>
+                                      <th class="tableHeadingColor" class="text-center">Action</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>001</td>
+                                      <td>2026-02-09</td>
+                                      <td>John Doe</td>
+                                      <td>9876543210</td>
+                                      <td>2026-02-15</td>
+                                      <td>27AAAAA0000A1Z5</td>
+                                      <td>Industrial Motor - X1</td>
+                                      <td>8501</td>
+                                      <td>2</td>
+                                      <td>5000</td>
+                                      <td>18%</td>
+                                      <td>1800</td>
+                                      <td>11800</td>
+                                      <td>
+                                          <i class="bi bi-pencil-fill textPurpal fs-6 cp"></i>
+                                          <i class="bi bi-trash3-fill textPurpal fs-6 cp"></i>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                              <tfoot class="bg-light fw-bold">
+                                  <tr>
+                                      <td colspan="8" class="text-end">Total Summary:</td>
+                                      <td>2</td>
+                                      <td>—</td>
+                                      <td>—</td>
+                                      <td>1,800</td>
+                                      <td>11,800</td>
+                                      <td></td>
+                                  </tr>
+                              </tfoot>
+                          </table>
+                      </div>
+                  </div>
+
+              </div>
+
+              <!-- form wrapper -->
+
+              <div class="content-wrapper formWrapper mt-5">
+                  <div class="page-header">
+                      <h3 class="page-title animate__animated animate__bounce">
+                          Sales
+                          <span class="page-title-icon bgPurpal text-white me-2">
+                              <i class="mdi mdi-home"></i>
+                          </span>
+                      </h3>
+                  </div>
                   <div class="row g-2 d-flex justify-content-end">
                       <div class="col-12 col-md-2 col-lg-1">
                           <label class="form-label mb-1">No</label>
@@ -74,65 +179,66 @@
                       </div>
                   </div>
 
-
-                  <div class="table-responsive">
-                      <div class="table-responsive mt-4 animate__animated animate__fadeIn">
-                          <table class="table table-bordered table-hover align-middle">
-                              <thead class="bgPurpal text-white">
-                                  <tr>
-                                      <th class="tableHeadingColor">No.</th>
-                                      <th class="tableHeadingColor">Date</th>
-                                      <th class="tableHeadingColor">Customer</th>
-                                      <th class="tableHeadingColor">Contact</th>
-                                      <th class="tableHeadingColor">CIB</th>
-                                      <th class="tableHeadingColor">GSTN</th>
-                                      <th class="tableHeadingColor">Item/Series</th>
-                                      <th class="tableHeadingColor">HSN</th>
-                                      <th class="tableHeadingColor">Qty</th>
-                                      <th class="tableHeadingColor">Rate</th>
-                                      <th class="tableHeadingColor">GST %</th>
-                                      <th class="tableHeadingColor">Tax</th>
-                                      <th class="tableHeadingColor">Amount</th>
-                                      <th class="tableHeadingColor" class="text-center">Action</th>
-                                  </tr>
-                              </thead>
-                              <tbody>
-                                  <tr>
-                                      <td>001</td>
-                                      <td>2026-02-09</td>
-                                      <td>John Doe</td>
-                                      <td>9876543210</td>
-                                      <td>2026-02-15</td>
-                                      <td>27AAAAA0000A1Z5</td>
-                                      <td>Industrial Motor - X1</td>
-                                      <td>8501</td>
-                                      <td>2</td>
-                                      <td>5000</td>
-                                      <td>18%</td>
-                                      <td>1800</td>
-                                      <td>11800</td>
-                                      <td>
-                                          <i class="bi bi-pencil-fill textPurpal fs-6 cp"></i>
-                                          <i class="bi bi-trash3-fill textPurpal fs-6 cp"></i>
-                                      </td> 
-                                  </tr>
-                              </tbody>
-                              <tfoot class="bg-light fw-bold">
-                                  <tr>
-                                      <td colspan="8" class="text-end">Total Summary:</td>
-                                      <td>2</td>
-                                      <td>—</td>
-                                      <td>—</td>
-                                      <td>1,800</td>
-                                      <td>11,800</td>
-                                      <td></td>
-                                  </tr>
-                              </tfoot>
-                          </table>
-                      </div>
+                  <div class="table-responsive mt-4 animate__animated animate__fadeIn">
+                      <table class="table table-bordered table-hover align-middle">
+                          <thead class="bgPurpal text-white">
+                              <tr>
+                                  <th class="tableHeadingColor">No.</th>
+                                  <th class="tableHeadingColor">Date</th>
+                                  <th class="tableHeadingColor">Customer</th>
+                                  <th class="tableHeadingColor">Contact</th>
+                                  <th class="tableHeadingColor">CIB</th>
+                                  <th class="tableHeadingColor">GSTN</th>
+                                  <th class="tableHeadingColor">Item/Series</th>
+                                  <th class="tableHeadingColor">HSN</th>
+                                  <th class="tableHeadingColor">Qty</th>
+                                  <th class="tableHeadingColor">Rate</th>
+                                  <th class="tableHeadingColor">GST %</th>
+                                  <th class="tableHeadingColor">Tax</th>
+                                  <th class="tableHeadingColor">Amount</th>
+                                  <th class="tableHeadingColor" class="text-center">Action</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>001</td>
+                                  <td>2026-02-09</td>
+                                  <td>John Doe</td>
+                                  <td>9876543210</td>
+                                  <td>2026-02-15</td>
+                                  <td>27AAAAA0000A1Z5</td>
+                                  <td>Industrial Motor - X1</td>
+                                  <td>8501</td>
+                                  <td>2</td>
+                                  <td>5000</td>
+                                  <td>18%</td>
+                                  <td>1800</td>
+                                  <td>11800</td>
+                                  <td>
+                                      <i class="bi bi-pencil-fill textPurpal fs-6 cp"></i>
+                                      <i class="bi bi-trash3-fill textPurpal fs-6 cp"></i>
+                                  </td>
+                              </tr>
+                          </tbody>
+                          <tfoot class="bg-light fw-bold">
+                              <tr>
+                                  <td colspan="8" class="text-end">Total Summary:</td>
+                                  <td>2</td>
+                                  <td>—</td>
+                                  <td>—</td>
+                                  <td>1,800</td>
+                                  <td>11,800</td>
+                                  <td></td>
+                              </tr>
+                          </tfoot>
+                      </table>
+                  </div>
+                  
+                  <div class="mt-3 d-flex justify-content-end ms-auto gap-2">
+                      <button class="btn btn-sm btn-danger text-white">Cancel</button>
+                      <button class="btn btn-sm bgPurpal text-white">Save</button>
                   </div>
 
               </div>
-          </div>
 
           </div>
