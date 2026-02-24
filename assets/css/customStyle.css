@@ -15,6 +15,10 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     display: none;
 }
 
+.textBlue {
+    color: #0e62ac;
+}
+
 .bgPurpal {
     background-color: var(--color) !important;
 }
@@ -93,15 +97,12 @@ td {
 }
 
 .mainBox {
-    width: 100%;
     background-color: #ddd !important;
     padding: 20px;
     width: 85vw !important;
     height: 90vh !important;
     overflow-y: auto !important;
 }
-
-
 
 .content-wrapper {
     background-color: #fff !important;
@@ -143,19 +144,187 @@ label {
     display: none !important;
 }
 
-/* button:focus {
-    outline: 2px solid black !important;
-    box-shadow: 0 0 0 0.25rem rgba(128, 0, 128, 0.25) !important;
+/* new logo starts */
+
+.brand-logo {
+    text-decoration: none;
 }
 
-button:focus-visible {
-    outline: 2px solid black !important;
-    outline-offset: 2px !important;
+.logo {
+    font-family: 'Poppins', sans-serif;
+    line-height: .8;
+    color: var(--color);
 }
 
-button{
-    border: 2px solid black !important;
-} */
+.logo div {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* new logo ends */
+
+
+/* dashboard cards */
+.dashboard-card {
+    position: relative;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-image-source: linear-gradient(135deg, #00c6ff, #0072ff);
+    border-image-slice: 1;
+    border: 1px solid royalblue;
+    font-weight: bold;
+    color: royalblue;
+    position: relative;
+    background: #ffffff;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 30px;
+    opacity: 0.9;
+}
+
+.card-content h6 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.card-content h2 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.top-circle {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #c8edff, #dbebf5);
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.card-icon,
+.card-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* dashboard cards end */
+
+
+/* company box start */
+
+.company-box-container {
+    padding: 15px;
+}
+
+.company-box {
+    box-shadow: 12px 0px 90px rgba(196, 213, 250, 0.35);
+    padding: 10px 15px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    border-image-source: linear-gradient(135deg, #00c6ff, #0072ff) !important;
+    background: linear-gradient(135deg, #e0f2fe, #eff6ff);
+    border-image-slice: 1 !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-box .decoration-circle {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 140px;
+    height: 140px;
+    background: #dbe7ff;
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.company-box .logo-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.company-box .company-name {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 1;
+}
+
+.company-box .contact-info {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.company-box .info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.company-box .info-item .icon {
+    color: #0e62ac;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.company-box .mt-10 {
+    /* margin-top: 10px; */
+}
+
+.company-box .divider {
+    /* margin: 20px 0; */
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, #4a6cf7, #a5bfff);
+    opacity: 1;
+}
+
+.company-box .date-section {
+    font-size: 14px;
+    color: #444;
+}
+
+.company-box .date-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+
+.company-box .label {
+    font-weight: 600;
+}
+
+/* company Box end */
+
+/* chart css start */
+.chartStyle {
+    height: 700px;
+}
+
+/* chart css end */
+
 
 @media screen and (min-width: 786px) {
     .navbar .navbar-brand-wrapper {
@@ -175,5 +344,15 @@ button{
 
     .navbar .navbar-brand-wrapper {
         width: 125px !important;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .mainBox {
+        width: 100% !important;
+    }
+
+    .chartStyle {
+        height: 500px;
     }
 }

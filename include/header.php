@@ -1,11 +1,27 @@
 <!-- <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"> -->
 <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 d-flex flex-row">
   <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
-    <a class="navbar-brand brand-logo" href="index.html"><img
-        src="assets/images/algomintt_s.png" alt="logo" /></a>
+
+
+
+    <!-- old log  --> <!-- do not delete this comment -->
+    <!-- <a class="navbar-brand brand-logo" href="index.html">
+      <img src="assets/images/algomintt_s.png" alt="logo" />
+    </a> -->
+
+    <!-- new logo -->
+
+    <a class="navbar-brand brand-logo" href="index.html">
+      <div class="logo">
+        <div>Algomintt</div>
+        <div class="ms-5">Software</div>
+      </div>
+    </a>
     <a class="navbar-brand p-0 miniLogo d-none" href="index.html">
       <img src="assets/images/algomintt_s.png" class="ms-5" alt="logo" />
     </a>
+
+    <!-- end new logo -->
 
     <a class="navbar-brand p-2 mobileMiniLogo" href="index.html">
       <img src="assets/images/algomintt_s.png" class="" alt="logo" />
@@ -18,13 +34,11 @@
     </button>
 
     <ul class="navbar-nav navbar-nav-right">
-
       <li class="nav-item d-none d-lg-block full-screen-link">
         <a class="nav-link">
           <i class="mdi mdi-fullscreen textPurpal" id="fullscreen-button"></i>
         </a>
       </li>
-
       <li class="nav-item dropdown">
         <a class="nav-link count-indicator dropdown-toggle textPurpal"
           id="notificationDropdown" href="#" data-bs-toggle="dropdown">
@@ -81,7 +95,6 @@
           <h6 class="p-3 mb-0 text-center">See all notifications</h6>
         </div>
       </li>
-
       <li class="nav-item nav-profile dropdown">
         <a class="nav-link textPurpal" id="profileDropdown" href="#"
           data-bs-toggle="dropdown" aria-expanded="false">
@@ -103,8 +116,7 @@
             <i class="fa-solid fa-right-from-bracket textPurpal me-2"></i> Log-out </a>
         </div>
       </li>
-
-      <li class="nav-item dropdown dropstart">
+      <li class="nav-item dropdown dropstart d-none d-lg-block">
         <a
           class="nav-link textPurpal fw-bold dropdown-toggle"
           href="#"
@@ -113,7 +125,6 @@
           aria-expanded="false">
           <i class="fa-solid fa-brush fs-5 themeIcon"></i>
         </a>
-
         <div
           class="dropdown-menu navbar-dropdown p-3"
           aria-labelledby="themeDropdown"
@@ -126,8 +137,6 @@
             style="cursor: pointer;">
         </div>
       </li>
-
-
     </ul>
     <button
       class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"

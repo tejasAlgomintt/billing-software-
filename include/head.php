@@ -13,13 +13,20 @@
 <link rel="stylesheet"
   href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<script>
+  (function() {
+    const savedColor = localStorage.getItem("themeColor");
+    if (savedColor) {
+      document.documentElement.style.setProperty('--color', savedColor);
+    }
+  })();
+</script>
 <link rel="stylesheet" href="assets/css/customStyle.css">
 <link rel="shortcut icon" href="assets/images/favicon.png" />
 <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
   integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
