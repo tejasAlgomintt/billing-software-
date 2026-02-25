@@ -103,7 +103,8 @@
         <div class="company-box mt-4 mt-lg-0">
           <div class="decoration-circle"></div>
           <div class="logo-wrapper">
-            <img src="assets/images/algomintt_s.png" alt="Company Logo" class="w-50">
+            <!-- <img src="assets/images/algomintt_s.png" alt="Company Logo" class="w-50"> -->
+            <img src="assets/images/algomintt_b.png" alt="Company Logo" class="w-50">
           </div>
           <h4 class="company-name textBlue">Algomintt Pvt. Ltd.</h4>
 
