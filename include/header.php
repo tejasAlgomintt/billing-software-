@@ -2,13 +2,6 @@
 <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 d-flex flex-row">
   <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
 
-
-
-    <!-- old log  --> <!-- do not delete this comment -->
-    <!-- <a class="navbar-brand brand-logo" href="index.html">
-      <img src="assets/images/algomintt_s.png" alt="logo" />
-    </a> -->
-
     <!-- new logo -->
 
     <a class="navbar-brand brand-logo" href="index.html">
@@ -40,12 +33,11 @@
         </a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link count-indicator dropdown-toggle textPurpal"
-          id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+        <a class="nav-link count-indicator dropdown-toggle textPurpal" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
           <i class="mdi mdi-bell-outline"></i>
           <span class="count-symbol bg-danger"></span>
         </a>
-        <div class="dropdown-menu dropdown-menu-end navbar-dropdown preview-list"
+        <div class="dropdown-menu navbar-dropdown preview-list"
           aria-labelledby="notificationDropdown">
           <h6 class="p-3 mb-0">Notifications</h6>
           <div class="dropdown-divider"></div>
@@ -138,9 +130,7 @@
         </div>
       </li>
     </ul>
-    <button
-      class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
-      type="button" data-toggle="offcanvas">
+    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
       <span class="mdi mdi-menu"></span>
     </button>
   </div>

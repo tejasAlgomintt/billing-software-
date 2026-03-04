@@ -21,6 +21,7 @@
 <script src="https://code.jquery.com/jquery-4.0.0.slim.min.js" integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc=" crossorigin="anonymous"></script>
 <script src="https://jscolor.com/releases/2.5.2/jscolor.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/6.0.0/echarts.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 
 
@@ -51,7 +52,6 @@
     document.documentElement.style.setProperty('--color', selectedColor);
     localStorage.setItem("themeColor", selectedColor);
   });
-
 
   // charts code 
 
@@ -371,7 +371,7 @@
           yAxisIndex: 0,
           data: generateData(50),
           symbol: 'none',
-           itemStyle: {
+          itemStyle: {
             color: 'orangered'
           }
         },
@@ -469,4 +469,59 @@
     myChart.setOption(option);
     window.addEventListener('resize', () => myChart.resize());
   })
+</script>
+
+<!-- google charts -->
+
+<script>
+  // Pie Chart
+  google.charts.load('current', {
+    'packages': ['corechart', 'bar']
+  });
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+
+    var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Work', 11],
+      ['Eat', 2],
+      ['Commute', 2],
+      ['Watch TV', 2],
+      ['Sleep', 7]
+    ]);
+
+    var options = {
+      title: 'My Daily Activities'
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+    chart.draw(data, options);
+  }
+
+  // Bar Chart
+
+  google.charts.load('current', {
+    'packages': ['bar']
+  });
+  google.charts.setOnLoadCallback(drawChart1);
+
+  function drawChart1() {
+    var data = google.visualization.arrayToDataTable([
+      ['Months', 'Sales', 'Expenses', 'Profit'],
+      ['may', 1000, 400, 200],
+      ['june', 1170, 460, 250],
+      ['jully', 660, 1120, 300],
+      ['janewary', 1030, 540, 350]
+    ]);
+    var options = {
+      chart: {
+        title: 'Company Performance',
+        subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+      }
+    };
+    var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+  }
 </script>

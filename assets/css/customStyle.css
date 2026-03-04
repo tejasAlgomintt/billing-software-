@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
+
 :root {
     --color: black;
 }
@@ -289,9 +290,7 @@ label {
     flex-shrink: 0;
 }
 
-.company-box .mt-10 {
-    /* margin-top: 10px; */
-}
+
 
 .company-box .divider {
     /* margin: 20px 0; */
@@ -322,9 +321,13 @@ label {
 .chartStyle {
     height: 700px;
 }
-
+.chartBorder{
+    border: 2px dashed royalblue;
+    /* border-radius: 100px; */
+    border-radius: 20px;
+}
 /* chart css end */
-
+ 
 
 @media screen and (min-width: 786px) {
     .navbar .navbar-brand-wrapper {

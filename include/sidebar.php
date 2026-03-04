@@ -8,6 +8,12 @@
         </a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="dashboard2.php">
+          <span class="menu-title">Dashboard 2</span>
+          <i class="mdi mdi-home menu-icon"></i>
+        </a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="enquiry.php">
           <span class="menu-title">Enquiry</span>
           <i class="mdi mdi-alpha-e-circle menu-icon"></i>
